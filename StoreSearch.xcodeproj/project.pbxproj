@@ -14,6 +14,7 @@
 		562F8AC52299ACB900FAFEC6 /* SearchResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 562F8AC42299ACB900FAFEC6 /* SearchResult.swift */; };
 		5653CD0422A81FF00000CAF4 /* LoadingCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5653CD0322A81FF00000CAF4 /* LoadingCell.xib */; };
 		5653CD0622A85B2C0000CAF4 /* UIImageView+DownloadImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5653CD0522A85B2C0000CAF4 /* UIImageView+DownloadImage.swift */; };
+		566C313D22AC17FC00E851A2 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 566C313C22AC17FC00E851A2 /* GradientView.swift */; };
 		567CA4AD22A9730500511DA0 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 567CA4AC22A9730500511DA0 /* DetailViewController.swift */; };
 		567CA4AF22A9B9B100511DA0 /* DimmingPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 567CA4AE22A9B9B100511DA0 /* DimmingPresentationController.swift */; };
 		56B53662229C323F00647DED /* SearchResultCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 56B53661229C323F00647DED /* SearchResultCell.xib */; };
@@ -31,6 +32,7 @@
 		562F8AC42299ACB900FAFEC6 /* SearchResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResult.swift; sourceTree = "<group>"; };
 		5653CD0322A81FF00000CAF4 /* LoadingCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoadingCell.xib; sourceTree = "<group>"; };
 		5653CD0522A85B2C0000CAF4 /* UIImageView+DownloadImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+DownloadImage.swift"; sourceTree = "<group>"; };
+		566C313C22AC17FC00E851A2 /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 		567CA4AC22A9730500511DA0 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		567CA4AE22A9B9B100511DA0 /* DimmingPresentationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DimmingPresentationController.swift; sourceTree = "<group>"; };
 		56B53661229C323F00647DED /* SearchResultCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchResultCell.xib; sourceTree = "<group>"; };
@@ -74,6 +76,7 @@
 				567CA4AE22A9B9B100511DA0 /* DimmingPresentationController.swift */,
 				562F8AC42299ACB900FAFEC6 /* SearchResult.swift */,
 				56B53663229C357700647DED /* SearchResultCell.swift */,
+				566C313C22AC17FC00E851A2 /* GradientView.swift */,
 				5653CD0522A85B2C0000CAF4 /* UIImageView+DownloadImage.swift */,
 				560186F822999C3F001F65DF /* Main.storyboard */,
 				56B53661229C323F00647DED /* SearchResultCell.xib */,
@@ -164,6 +167,7 @@
 				56B53664229C357700647DED /* SearchResultCell.swift in Sources */,
 				567CA4AD22A9730500511DA0 /* DetailViewController.swift in Sources */,
 				560186F522999C3F001F65DF /* AppDelegate.swift in Sources */,
+				566C313D22AC17FC00E851A2 /* GradientView.swift in Sources */,
 				5653CD0622A85B2C0000CAF4 /* UIImageView+DownloadImage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
