@@ -211,20 +211,28 @@
                         <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Horizontal" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zkz-Ex-HLk">
-                                <rect key="frame" x="244.5" y="149.5" width="79" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <pageControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="i5e-Vb-rbg">
+                                <rect key="frame" x="270" y="270" width="39" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="pageChanged:" destination="pTW-7j-3yV" eventType="valueChanged" id="Mwr-cY-cUr"/>
+                                </connections>
+                            </pageControl>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" pagingEnabled="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Gt3-5Y-opi">
+                                <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <outlet property="delegate" destination="pTW-7j-3yV" id="tP1-rW-PAo"/>
+                                </connections>
+                            </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <constraints>
-                            <constraint firstItem="Zkz-Ex-HLk" firstAttribute="centerX" secondItem="gbe-dW-uNH" secondAttribute="centerX" id="GFw-Zu-RDZ"/>
-                            <constraint firstItem="Zkz-Ex-HLk" firstAttribute="centerY" secondItem="gbe-dW-uNH" secondAttribute="centerY" id="H0I-h7-ZJn"/>
-                        </constraints>
                         <viewLayoutGuide key="safeArea" id="EGu-lj-an0"/>
                     </view>
+                    <connections>
+                        <outlet property="pageControl" destination="i5e-Vb-rbg" id="aRf-Le-3sC"/>
+                        <outlet property="scrollView" destination="Gt3-5Y-opi" id="k4a-1Y-zFh"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WpU-hX-oWd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
