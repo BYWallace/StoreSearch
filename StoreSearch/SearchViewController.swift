@@ -170,8 +170,8 @@ extension SearchViewController: UITableViewDelegate, UITableViewDataSource {
     
     // MARK:- Helper Methods
     func showNetworkError() {
-        let alert = UIAlertController(title: "Whoops...", message: "There was an error accessing the iTunes store", preferredStyle: .alert)
-        let action = UIAlertAction(title: "OK", style: .default, handler: nil)
+        let alert = UIAlertController(title: NSLocalizedString("Whoops...", comment: "Localized alert: Whoops..."), message: NSLocalizedString("There was an error reading from the iTunes store. Please try again.", comment: "Localized error: Reading from the iTunes Store. Please try again."), preferredStyle: .alert)
+        let action = UIAlertAction(title: NSLocalizedString("OK", comment: "Localized alert accept: OK"), style: .default, handler: nil)
         alert.addAction(action)
         present(alert, animated: true, completion: nil)
     }
